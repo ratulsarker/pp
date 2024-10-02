@@ -1,33 +1,42 @@
 body {
+    align-items: center;
     font-family: 'Courier New', Courier, monospace;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    line-height: 2;
+    background-color: #f8e993;
+    padding: 0px;  /* Reduces the height by adjusting padding */
+    width: 100%;  /* Ensures it spans the full width of the page */
 }
-
-header, main, footer {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+/* Container for the main content */
+main {
+    max-width: 1200px; /* Maximum width to prevent stretching on large screens */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Some padding for spacing */
+    width: 90%; /* Allow the content to take up 90% of the viewport width */
     text-align: center;
 }
-
 header {
     background-color: #333;
     color: #fff;
-    text-align: center;
+    align-items: center;
+    /* padding: 10px 40px; Add padding on the left and right */
+    margin-right: 2%;
+    margin-left: 2%;
 }
 
+
+
 h1 {
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     text-align: center;
+    padding: 2%;
+    
 }
 
 h2 {
     margin-top: 100px;
     color: #333;
     text-align: center;
+    background-color: #acb2ca;
 }
 
 #socials ul {
@@ -57,8 +66,51 @@ h2 {
 footer {
     text-align: center;
     /* background-color: #333; */
-    color: #fff;
+    color: #4863dd;
     /* position: fixed; */
     bottom: 0;
     width: 100%;
+}
+#about-section {
+    display: flex;
+    justify-content: center; /* Centers the entire section horizontally */
+    align-items: center; /* Centers the content vertically */
+    padding: 20px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center; /* Ensures both items (image and text) are centered */
+    align-items: center; /* Ensures vertical alignment */
+    max-width: 100%; /* Controls the width of the content */
+}
+
+.side-image {
+    max-width: 60%; /* Ensures the image doesn’t take up too much space */
+    height: auto;
+    margin-right: 30px; /* Adds space between the image and text */
+}
+
+.text-content {
+    max-width: 80%; /* Ensures text doesn’t exceed half the width */
+    text-align: left; /* Left-aligns the text within the div */
+}
+
+.text-content h2, .text-content p {
+    margin: 0;
+    padding: 10px;
+}
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #555;
 }
